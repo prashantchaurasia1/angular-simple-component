@@ -1,0 +1,29 @@
+td{
+    text-align: center;
+}
+
+.link{
+    cursor: pointer;
+    color: #3399ff;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+.divContainer{
+    width: 32%;
+    height: 250px;
+    border: 1px solid;
+    float: left;
+}
+
+.divContainer div{
+    height: 185px;
+    overflow: auto;
+    word-wrap: break-word;
+    padding: 4px;
+}
+
+h3{
+    text-indent: 10px;
+}

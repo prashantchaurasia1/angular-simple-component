@@ -1,0 +1,34 @@
+<p-table [value]="userInfo">
+	<ng-template pTemplate="header">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Gender</th>
+			<th>Age</th>
+			
+	</ng-template>
+	<ng-template pTemplate="body" let-singleUserInfo>
+		<tr>
+			<td>{{singleUserInfo.id}}</td>
+			<td>{{singleUserInfo.name}}</td>
+			<td>{{singleUserInfo.gender}}</td>
+			<td>{{singleUserInfo.age}}</td>
+		</tr>
+	</ng-template>
+</p-table>
+
+<h1></h1>
+<button pButton type="button" label="Click" (click)="contentButton()"></button>
+
+
+<ng-template [ngIf]="showInitilContent" [ngIfElse]="showOtherContent">
+	<div>
+	  Showing initilal content
+	</div>
+</ng-template>
+  
+<ng-template #showOtherContent>
+	<div>
+	  Showing other content
+	</div>
+</ng-template>
